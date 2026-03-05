@@ -435,7 +435,7 @@ function PersonalCard({ title, subtitle, icon: Icon, accentColor }: { title: str
 }
 
 // Social Links
-function SocialLinks() {
+function SocialLinks({ className = "" }: { className?: string }) {
   const links = [
     { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/in/dblair-gonzales/", color: "hover:bg-blue-600" },
     { name: "Twitter / X", icon: Twitter, url: "https://twitter.com/legen_dabyll", color: "hover:bg-sky-500" },
@@ -444,7 +444,7 @@ function SocialLinks() {
   ];
 
   return (
-    <div className="flex items-center gap-3">
+    <div className={`flex items-center justify-center lg:justify-start gap-3 ${className}`}>
       {links.map((link, i) => (
         <motion.a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className={`w-11 h-11 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-400 transition-all hover:text-white ${link.color}`} title={link.name} initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ delay: i * 0.1 }} whileHover={{ scale: 1.15, rotate: -6 }} whileTap={{ scale: 0.95 }}>
           <link.icon className="w-5 h-5" />
