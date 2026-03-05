@@ -335,6 +335,7 @@ function ScrollingTools() {
     { name: "Gemini", icon: Sparkles },
     { name: "Grok", icon: Zap },
     { name: "Perplexity", icon: Brain },
+    { name: "z.ai", icon: Sparkles },
     { name: "NotebookLM", icon: BookOpen },
     { name: "ComfyUI", icon: ImageIcon },
     { name: "Midjourney", icon: Palette },
@@ -347,6 +348,7 @@ function ScrollingTools() {
     { name: "Notion", icon: FileText },
     { name: "Slack", icon: MessageSquare },
     { name: "Typebot", icon: Bot },
+    { name: "Vercel", icon: Rocket },
     { name: "Railway", icon: Rocket },
     { name: "Supabase", icon: Database },
     { name: "n8n", icon: Workflow },
@@ -469,9 +471,11 @@ export default function Portfolio() {
   ];
 
   const projects = [
-    { title: "ClapBot — Peer Recognition Slack Bot", description: "Built a peer recognition bot that runs on free infrastructure. Team members give kudos seamlessly. SaaS vendors hate this one trick.", stack: ["Slack Bot", "Node.js", "Railway", "Supabase"], impact: [{ icon: DollarSign, value: "$0", label: "Monthly Cost" }, { icon: Users, value: "37", label: "Team Members" }, { icon: TrendingUp, value: "100%", label: "Free Forever" }], icon: Bot, chaosTag: "FREE INFINITY" },
+    { title: "DapBot — Peer Recognition Slack Bot", description: "Gen Z vibes meet peer recognition. Built a kudos bot that runs on free infrastructure. Team members give props seamlessly. SaaS vendors hate this one trick.", stack: ["Slack Bot", "Node.js", "Railway", "Supabase"], impact: [{ icon: DollarSign, value: "$0", label: "Monthly Cost" }, { icon: Users, value: "37", label: "Team Members" }, { icon: TrendingUp, value: "100%", label: "Free Forever" }], icon: Bot, chaosTag: "FREE INFINITY" },
     { title: "HRIS on Notion — Custom HR System", description: "Full HRIS on Notion: employee database, onboarding tracker, org structure, leave requests, HR reporting — all interconnected. BambooHR who?", stack: ["Notion", "Airtable", "Automation"], impact: [{ icon: DollarSign, value: "$280+", label: "Monthly Saved" }, { icon: Target, value: "Full", label: "Custom Build" }, { icon: Database, value: "Zero", label: "Vendor Lock-in" }], icon: Database, chaosTag: "NOTION MAXING" },
-    { title: "Typebot Onboarding Flow", description: "Chatbot-based onboarding that candidates love. Applications flow to ATS while new hires get a unique, engaging experience. HR actually smiled.", stack: ["Typebot", "Notion", "ATS Integration"], impact: [{ icon: MessageSquare, value: "Unique", label: "Experience" }, { icon: Timer, value: "90%", label: "Time Saved" }, { icon: CheckCircle2, value: "Zero", label: "Manual Emails" }], icon: Zap, chaosTag: "AUTOMATION WINS" },
+    { title: "Interactive Hiring Chatbot", description: "Custom chatbot that acts as an interactive hiring form. Applicants enter details, upload CVs, and everything gets recorded to Google Sheets + Drive automatically. No more drowning in emails.", stack: ["Chatbot", "Google Sheets", "Google Drive", "Automation"], impact: [{ icon: MessageSquare, value: "Interactive", label: "Experience" }, { icon: Timer, value: "Auto", label: "Data Entry" }, { icon: CheckCircle2, value: "Zero", label: "Manual Sorting" }], icon: Zap, chaosTag: "AUTOMATION WINS" },
+    { title: "AI Caption-to-Image Generator", description: "Prototype tool for SMMs. Drop a caption, AI analyzes it and generates a matching photo. Because sometimes you just need a visual that actually fits your vibe.", stack: ["AI API", "Image Gen", "Automation"], impact: [{ icon: ImageIcon, value: "Auto", label: "Image Gen" }, { icon: Brain, value: "AI", label: "Analysis" }, { icon: Timer, value: "Seconds", label: "Output Time" }], icon: Palette, chaosTag: "AI POWERED" },
+    { title: "This Portfolio Website", description: "Built this entire portfolio with AI assistance (shoutout z.ai), deployed on Vercel. Total cost? $0. Because why pay when AI does the heavy lifting?", stack: ["Next.js", "AI-Assisted", "Vercel", "z.ai"], impact: [{ icon: DollarSign, value: "$0", label: "Total Cost" }, { icon: Rocket, value: "Free", label: "Hosting" }, { icon: Brain, value: "AI", label: "Built With" }], icon: Globe, chaosTag: "AI BUILT" },
     { title: "Clique Dance Studio — Full Ops Build", description: "Entire ops infrastructure from scratch: dashboard, brand identity, logo ideation, growth strategy, competitive research, marketing playbook.", stack: ["Notion", "Brand Strategy", "Marketing", "Operations"], impact: [{ icon: Palette, value: "Full", label: "Brand Identity" }, { icon: MapPin, value: "End-to-End", label: "Operations" }, { icon: DollarSign, value: "$0", label: "SaaS Cost" }], icon: Building2, chaosTag: "BUILT DIFFERENT" },
   ];
 
